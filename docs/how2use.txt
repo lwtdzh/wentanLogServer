@@ -1,0 +1,6 @@
+1. make.
+2. run "server" to start listen, using HTTP get to push log.
+3. run "genlog" to generate logs to test search function.
+4. run "search" to use bptree to search log.
+5. run "pushlog" to push logs using HTTP Get protocol to the server.
+6. run "bptest" to test the b+ tree.

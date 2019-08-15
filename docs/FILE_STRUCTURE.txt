@@ -1,0 +1,16 @@
+Following is the file structure of the B+ Tree.
+
+FILE HEAD (160):
+
+[u32]f_num
+[u64]size
+[u64]head position
+
+floor:
+[father64] [if_leaf_32(0 is leaf)] [used_ele_32] [64] [Keysize] [64] [Keysize] [64] ... [64]
+
+leaf:
+[father64] [used_num_32] [key1] [val1] [key2] [val2] ... [next_leaf_64]
+
+value:
+[used_num_32] [val1] [val2] ... [val10] [next_val_place_64]
